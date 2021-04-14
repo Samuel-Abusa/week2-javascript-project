@@ -18,3 +18,6 @@ function collectDateBorn(){
 //After the data is collected from the user in form of a date we convert it into the index of the day of the week 0 being Sunday.
 
 var dayOfTheWeek = collectDateBorn().getDay();
+
+
+var gender = prompt("What is your gender");
