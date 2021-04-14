@@ -1,5 +1,9 @@
+//Defined two variables that we'll use in the function
+
 let dateBorn;
 var dob;
+
+//This function runs on the event that the user clicks on the button with the event listener attribute
 
 function collectDateBorn(){
   alert("Hello there! Let's get started right away. Click ok to continue.");
@@ -10,5 +14,7 @@ function collectDateBorn(){
 
   return dob;
 }
+
+//After the data is collected from the user in form of a date we convert it into the index of the day of the week 0 being Sunday.
 
 var dayOfTheWeek = collectDateBorn().getDay();
