@@ -11,8 +11,11 @@ function collectDateBorn(){
   //This varriable holds the data which the user keyed in and converted it from a string to date
   let dtbrn = new Date(dateBorn);
   
-   //After the data is collected from the user in form of a date we convert it into the index of the day of the week 0 being Sunday.
+  //After the data is collected from the user in form of a date we convert it into the index of the day of the week 0 being Sunday.
   var dayOfTheWeek = dtbrn.getDay();
+  var monthOfTheYear = dtbrn.getMonth();
+  console.log("Month" +monthOfTheYear);
+
 
   var gender = prompt("What is your gender");
 
