@@ -1,17 +1,21 @@
-/*$ (document).ready(function(){
-  $ ('.card').hide();
+
+$ (document).ready(function(){
+  $ ('.card').css({"display" : "none"});
 });
 
-*/
-
-
+$ (document).ready(function(){
+  $ ('.dateBrn').click(function(){
+      $ ('.card').css({"display" : "block"});
+    }
+  );
+});
 
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 //This function runs on the event that the user clicks on the button with the event listener attribute
 
-function collectDateBorn(){
+/*function collectDateBorn(){
   alert("Hello there! Let's get started right away. Click ok to continue.");
   
   let dateBorn = prompt("Kindly enter the date you were born in the following formart : mm/dd/yyyy");
@@ -40,18 +44,6 @@ function collectDateBorn(){
    }
   }
 }
-
-
-
-
-
-
-  
- 
-  
-
-  
-
-
+*/
 
 
