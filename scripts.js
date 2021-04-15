@@ -14,19 +14,22 @@ function collectDateBorn(){
   //After the data is collected from the user in form of a date we convert it into the index of the day of the week 0 being Sunday.
   var dayOfTheWeek = dtbrn.getDay();
   var monthOfTheYear = dtbrn.getMonth();
-  console.log("Month" +monthOfTheYear);
-
-
-  var gender = prompt("What is your gender");
-
-  if (gender == "male"){
-    console.log(maleNames[dayOfTheWeek]);
-  }
-  else if (gender = "female"){
-    console.log(femaleNames[dayOfTheWeek]);
+  
+  if (dayOfTheWeek < 0 || dayOfTheWeek > 6 || monthOfTheYear < 0 || monthOfTheYear > 11){
+    alert("Invalid date format.");
   }
   else{
-    alert("Error generating birth name")
+    var gender = prompt("What is your gender");
+ 
+   if (gender == "male"){
+     console.log(maleNames[dayOfTheWeek]);
+   }
+   else if (gender = "female"){
+     console.log(femaleNames[dayOfTheWeek]);
+   }
+   else{
+     alert("Error generating birth name")
+   }
   }
 }
 
