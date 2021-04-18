@@ -8,3 +8,10 @@ form{
   width: 60%;
   margin: 30px auto;
 }
+label{
+  margin: 25px;
+}
+.sub{
+  display: block;
+  margin: 0 25px;
+}
