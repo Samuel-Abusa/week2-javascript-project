@@ -12,7 +12,6 @@ var aknNames = function(yr, gendr){
 }
 
 
-
 $ (document).ready(function(){
   $ ('form').submit(function(){
     var yr = parseInt($ ('#do_b').val());
